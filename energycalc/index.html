@@ -1,0 +1,73 @@
+<html><head><title>Energy Calculator</title>
+<link rel="stylesheet" type="text/css" href="/style.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"></head>
+<body background="/bg.png"><div class="main1">
+<h3 style="color:#FFCC44;">Energy Calculator Online 2.0 by Br0k3n</h3><br>
+<h3 style="font-size:20px;color:#FFCC44;">All values must be an integer (example: 2.5 or "seven" isn't allowed, but 7 is)</h3><br><br>
+<p style="color:white;">You will get <input type="number" id="input" value="0" size="16"> energy in <b id="output">[time]</b> <input type="button" onclick="add()" value="Convert!"><br/><br>
+In <input type="number" id="input2" size="16" value="0"> seconds, you will get <b id="output2">[energy]</b> <input type="button" onclick="addm()" value="Convert!"><br><br><br>
+<table border="1" style="border-style:solid;border-width:3px;background-color:#adadad"><tr>
+<td><input type="number" id="minutes" value="0" size="16"> minutes</td></tr>
+<tr><td><input type="number" id="hours" value="0" size="16"> hours</td>
+<td><b id="output3">[seconds]</b></td></tr>
+<tr><td><input type="number" id="days" value="0" size="16"> days</td></tr>
+</table><input type="button" onclick="yolo()" value="Convert!">
+<br/><br/>
+<input type="number" id="minutes2" value="0" size="16"> minutes = <b id="output1337">[hours &amp; minutes]</b> <input type="button" onclick="xddd()" value="Convert!">
+</p><br/>
+</body>
+</html>
+<script>
+function add(){
+var input = parseInt(document.getElementById("input").value)
+var solution = input * 150
+var minutes = Math.floor(solution / 60)
+var seconds = 60 * minutes
+var kk = solution - seconds
+var output = document.getElementById("output")
+if (!isNaN(minutes) && !isNaN(kk)) {
+if (kk != 0)
+output.innerHTML = minutes + " minute(s) and " + kk + " seconds."
+else
+output.innerHTML = minutes + " minute(s)."
+}
+else { alert("Please input a valid number.") }
+}
+
+function addm() {
+var input2 = parseInt(document.getElementById("input2").value)
+var gg = Math.floor(input2/150)
+var output2 = document.getElementById("output2")
+if (!isNaN(gg)) {
+output2.innerHTML = gg + " energy."
+}
+else { alert("Please input a valid number.") }
+}
+
+function yolo(){
+var minutes = parseInt(document.getElementById("minutes").value)
+var hours = parseInt(document.getElementById("hours").value)
+var days = parseInt(document.getElementById("days").value)
+var heh = minutes * 60
+var hehe = hours * 3600
+var heheh = days * 86400
+var output3 = document.getElementById("output3")
+var nope = heh + hehe + heheh
+if (!isNaN(nope)) {
+output3.innerHTML = nope + " seconds."
+}
+else { alert("Please input a valid number.") }
+}
+
+function xddd(){
+var output = document.getElementById("output1337")
+var minutes = parseInt(document.getElementById("minutes2").value)
+var hours = Math.floor(minutes / 60)
+var nopes = hours * 60
+var mins = minutes - nopes
+if (!isNaN(hours) && !isNaN(mins)) {
+output1337.innerHTML = hours + " hour(s) and " + mins + " minute(s)."
+}
+else { alert("Please input a valid number.") }
+}
+</script>

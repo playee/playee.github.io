@@ -1,0 +1,265 @@
+p  { 
+color: white;
+font-family: sans-serif;
+display: inline;
+}
+a { 
+color: #ffc119;
+font-family: Verdana;
+text-decoration: none;
+}
+a:hover { 
+color: #ffc119; 
+font-family: Verdana; 
+text-decoration: underline; 
+}
+h1, .nokia { 
+font-family: nokia;
+font-size: 200%;
+color: #ffc119;
+display: inline;
+}
+h2 {
+font-family: Open sans; 
+color: #ffc119; 
+font-size: 50px;
+}
+h3 { 
+font-family: Open sans; 
+color: #ffc119; 
+font-size: 40px; 
+display: inline;
+}
+hr {
+display: block;
+width: 100%;
+height: 0px;
+border: 0;
+border-top: 1px solid #ffc119;
+margin: 0em 0;
+padding: 0;
+}
+
+html {display: table;height: 100%;width: 100%;}
+body {display: table-cell;}
+.main1 {margin: 35px 20px 30px;max-width:100%;}
+.main2 {margin: 35px auto 30px;max-width: 900px;padding: 0 20px;}
+#main3 { 
+background: url(http://playee.esy.es/backgrounds/eebgs/eebg1-home1.png);
+background-position: 0px 5px;
+background-repeat: repeat-x;
+padding: 0px 0px 245px; }
+#main3-bottom { 
+background: url(http://playee.esy.es/backgrounds/eebgs/eebg5-home1.png);
+background-position: 0px 0px;
+background-repeat: repeat-x;
+padding: 0px 0px 240px; }
+.main11 {margin: 25px 20px 60px;max-width:100%;}
+.spacing1 {margin:25px;max-width:100%;}
+
+a.btn1 {
+background-color: #2b2b2b;
+border: 2px solid #ffc119;
+border-radius: 30px;
+padding: 14px 25px;
+color: white;
+text-decoration: none;
+text-align: center;
+font-size: 17px;
+font-family: sans-serif;
+display: inline-block;
+-webkit-transition-duration: 0.4s;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+a.btn1:hover {
+background-color: #ffc119;
+border: 2px solid #ffc119;
+border-radius: 30px;
+color: black;
+}
+
+button.accordion {
+background-color: #333333;
+color: #fff;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.2s;
+}
+button.accordion2 {
+background-color: #ffc119;
+color: #262626;
+cursor: default;
+padding: 18px;
+width: 100%;
+text-align: left;
+border: none;
+outline: none;
+}
+button.accordion:hover {
+background-color: #404040;
+}
+button.accordion.active {
+background-color: #4d4d4d;
+}
+div.panel {
+padding: 10px 18px;
+background-color: #4d4d4d;
+display: none;
+}
+div.panel.show {
+display: block;
+}
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* border: 1px solid #ffc119; */
+    background-color: #333333;
+}
+ul.tab li {float: left;width:25%;}
+ul.tab li a {
+    display: inline-block;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    width: 100%;
+}
+ul.tab li a:hover {background-color: #404040;}
+ul.tab li a:focus, .active {background-color: #4d4d4d;} 
+.tabcontent {
+    display: none;
+    padding: 40px 18px;
+    /* border: 1px solid #ffc119; */
+    border-top: none;
+    background-color: #4d4d4d;
+}
+
+#nav
+{
+	margin:0;
+	padding:0;
+}
+
+#nav ul
+{
+	padding-top:25px;
+	padding-bottom:25px;
+	margin:0;
+    /* background-color:#222; */
+}
+
+#nav li a
+{
+    font-family: arial;
+    text-transform: uppercase;
+    display: block;
+    color: #e5e5e5;
+    padding: 11px 10px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 120%;
+    border-radius:30px;
+    text-align:left;
+    background-color: #282828;
+}
+
+#nav ul li
+{
+    display: inline-block;
+	position:relative;
+	margin:0;
+	padding-right:5px;
+
+}
+
+#nav ul li a:hover /* original: #nav ul li:hover */
+{
+    background-color: #333;
+    text-decoration: none;
+    color: #fff;
+    font-family: arial;
+}    
+
+#nav ul li a:active
+{
+    background-color: #444;
+}    
+    
+#nav ul li.nav-home a
+{
+    text-transform: none;
+    font-family: nokia;
+    background-color: #282828;
+    color: #ffc119;
+    font-size: 16px;
+}
+#nav ul li.nav-home a:hover
+{
+    text-transform: none;
+    font-family: nokia;
+    background-color: #333;
+    color: #ffc119;
+}
+
+#nav ul li.nav-new {float: right;}
+#nav ul li.nav-new a {color: #ffc119;}
+#nav ul li.nav-new a:hover {color: #ffc119;}
+#nav ul li.nav-new a:active {background-color: #555;color: #ffc119;}
+
+#nav ul ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0px;
+	padding:0px;
+}
+
+#nav ul ul li
+{
+	float:none;
+	width:200px;
+	padding-top:3px;
+}
+
+#nav ul ul a
+{
+	line-height:120%;
+	padding:11px 10px; 
+}
+
+#nav ul ul ul
+{
+	top:0;
+	left:100%;
+}
+
+#nav ul li:hover > ul
+{
+	display:block
+}
+
+@font-face {
+font-family: nokia;
+src: url(nokia.ttf);
+}
+
+@font-face {
+font-family: visitor1;
+src: url(visitor1.ttf);
+}
+.visitor1 {
+font-family: visitor1;
+font-size: 120%;
+color: #ffc119;
+}
