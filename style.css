@@ -4,29 +4,29 @@ font-family: sans-serif;
 display: inline;
 }
 a { 
-color: #ffc119;
+color: #ffc936;
 font-family: Verdana;
 text-decoration: none;
 }
 a:hover { 
-color: #ffc119; 
+color: #ffc936; 
 font-family: Verdana; 
 text-decoration: underline; 
 }
 h1, .nokia { 
 font-family: nokia;
 font-size: 200%;
-color: #ffc119;
+color: #ffc936;
 display: inline;
 }
 h2 {
 font-family: Open sans; 
-color: #ffc119; 
+color: #ffc936; 
 font-size: 50px;
 }
 h3 { 
 font-family: Open sans; 
-color: #ffc119; 
+color: #ffc936; 
 font-size: 40px; 
 display: inline;
 }
@@ -35,7 +35,7 @@ display: block;
 width: 100%;
 height: 0px;
 border: 0;
-border-top: 1px solid #ffc119;
+border-top: 1px solid #ffc936;
 margin: 0em 0;
 padding: 0;
 }
@@ -59,7 +59,7 @@ padding: 0px 0px 240px; }
 
 a.btn1 {
 background-color: #2b2b2b;
-border: 2px solid #ffc119;
+border: 2px solid #ffc936;
 border-radius: 30px;
 padding: 14px 25px;
 color: white;
@@ -73,8 +73,8 @@ transition-duration: 0.4s;
 cursor: pointer;
 }
 a.btn1:hover {
-background-color: #ffc119;
-border: 2px solid #ffc119;
+background-color: #ffc936;
+border: 2px solid #ffc936;
 border-radius: 30px;
 color: black;
 }
@@ -91,7 +91,7 @@ outline: none;
 transition: 0.2s;
 }
 button.accordion2 {
-background-color: #ffc119;
+background-color: #ffc936;
 color: #262626;
 cursor: default;
 padding: 18px;
@@ -120,7 +120,7 @@ ul.tab {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* border: 1px solid #ffc119; */
+    /* border: 1px solid #ffc936; */
     background-color: #333333;
 }
 ul.tab li {float: left;width:25%;}
@@ -139,7 +139,7 @@ ul.tab li a:focus, .active {background-color: #4d4d4d;}
 .tabcontent {
     display: none;
     padding: 40px 18px;
-    /* border: 1px solid #ffc119; */
+    /* border: 1px solid #ffc936; */
     border-top: none;
     background-color: #4d4d4d;
 }
@@ -200,7 +200,7 @@ ul.tab li a:focus, .active {background-color: #4d4d4d;}
     text-transform: none;
     font-family: nokia;
     background-color: #282828;
-    color: #ffc119;
+    color: #ffc936;
     font-size: 16px;
 }
 #nav ul li.nav-home a:hover
@@ -208,13 +208,13 @@ ul.tab li a:focus, .active {background-color: #4d4d4d;}
     text-transform: none;
     font-family: nokia;
     background-color: #333;
-    color: #ffc119;
+    color: #ffc936;
 }
 
 #nav ul li.nav-new {float: right;}
-#nav ul li.nav-new a {color: #ffc119;}
-#nav ul li.nav-new a:hover {color: #ffc119;}
-#nav ul li.nav-new a:active {background-color: #555;color: #ffc119;}
+#nav ul li.nav-new a {color: #ffc936;}
+#nav ul li.nav-new a:hover {color: #ffc936;}
+#nav ul li.nav-new a:active {background-color: #555;color: #ffc936;}
 
 #nav ul ul
 {
@@ -261,5 +261,5 @@ src: url(visitor1.ttf);
 .visitor1 {
 font-family: visitor1;
 font-size: 120%;
-color: #ffc119;
+color: #ffc936;
 }
