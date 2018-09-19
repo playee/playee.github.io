@@ -45,12 +45,12 @@ body {display: table-cell;}
 .main1 {margin: 35px 20px 30px;max-width:100%;}
 .main2 {margin: 35px auto 30px;max-width: 900px;padding: 0 20px;}
 #main3 { 
-background: url(http://playee.esy.es/backgrounds/eebgs/eebg1-home1.png);
+background: url(https://playee.github.io/backgrounds/eebgs/eebg1-home1.png);
 background-position: 0px 5px;
 background-repeat: repeat-x;
 padding: 0px 0px 245px; }
 #main3-bottom { 
-background: url(http://playee.esy.es/backgrounds/eebgs/eebg5-home1.png);
+background: url(https://playee.github.io/backgrounds/eebgs/eebg5-home1.png);
 background-position: 0px 0px;
 background-repeat: repeat-x;
 padding: 0px 0px 240px; }

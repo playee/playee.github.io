@@ -9,7 +9,7 @@
     </ul>
   </li>-->
   <li><a href="/classic">Classic</a></li>
-  <li><a href="/old">Old</a></li>
+  <!--<li><a href="/old">Old</a></li>-->
   <li><a href="javascript:void(0)">Remake</a>
     <ul>
       <li><a href="/haxee">HaxEE</a></li>
@@ -34,7 +34,7 @@
       <li><a href="/campaign-guide">Campaign Guide</a></li>
     </ul>
   </li>
-  <!--<li class="nav-new"><a href="http://playee.esy.es/classic/" style="border-top-left-radius:0px;border-bottom-left-radius:0px">Classic</a></li>
+  <!--<li class="nav-new"><a href="" style="border-top-left-radius:0px;border-bottom-left-radius:0px">Classic</a></li>
   <li class="nav-new"><a href="javascript:void(0)"style="color:#e5e5e5;border-top-right-radius:0px;border-bottom-right-radius:0px">NEW:</a></li>-->
 </ul>
 </nav>
