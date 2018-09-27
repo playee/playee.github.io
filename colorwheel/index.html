@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name=description content="EE Colorwheel. Choose a color and find blocks that match it.">
+<meta name=author content="">
+<title>EE Colorwheel</title>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel=stylesheet type='text/css'>
+
+
+<!--<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<link rel="stylesheet" href="css/bootstrap-colorpicker.min.css" type="text/css" media="screen" title="no title" charset="utf-8">-->
+<link rel="stylesheet" href="/colorwheel/cw.css" type="text/css" media="screen" title="no title">
+<style type="text/css" media="screen">
+html {
+     overflow: -moz-scrollbars-vertical;
+     overflow: scroll;
+}
+</style>
+</head>
+<body>
+<input id="color1" style="display:none" value=""></input>
+<div id="results" style="display:none"></div>
+<div class="container">
+<div class="page-header">
+<h1 id="head">EE COLORWHEEL</h1>
+<div class="input-group demo2" style="z-index:100" data-horizontal="true">
+<input id="search_text" value="" class="form-control" placeholder="Search for a color, hex code or for a specific block." />
+<span class="input-group-addon"><i></i></span>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3 col-lg-3 col-sm-3">
+<div>
+<div id="results-0" class="visible-lg visible-md visible-sm visible-xs">
+</div>
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-3">
+<div class="text-success">
+<div id="results-1" class="visible-lg visible-md visible-sm">
+</div>
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-3">
+<div class="text-success">
+<div id="results-2" class="visible-lg visible-md visible-sm visible-xs">
+</div>
+</div>
+</div>
+<div class="col-md-3 col-lg-3 col-sm-3">
+<div class="text-success">
+<div id="results-3" class="visible-lg visible-md visible-sm">
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<script src="/colorwheel/cw.js"></script>
+<!--<script src="js/min/bootstrap-colorpicker.min.js"></script>
+<script src="js/min/ciede2000.min.js"></script>
+<script src="js/min/color-convert-0.3.1.min.js"></script>
+
+<script src="js/min/colorConverter.min.js"></script>
+<script src="js/min/config.min.js"></script>
+<script src="js/min/jquery.cookie.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/min/UI.min.js"></script
+<script src="js/min/init.min.js"></script>
+<script src="js/min/scripts.min.js"></script>-->
+<!-- SEARCH MUST BE SEPERATE; DON'T KNOW WHY THOUGH -->
+<script src="/colorwheel/cw.js"></script>
+<p id="feedback">
+	<a href="/colorwheel/bk.html" style="opacity:0.5;color:#fff" id="add_keywords">Add keywords</a> | <a href="https://docs.google.com/forms/d/19MGzrdjS31wqbHllbIdrEda45Hrqb8ILCUNzTbyYKVA/viewform?usp=send_form" style="color:#fff;opacity:0.5" id="feedback_link">Feedback</a> | <a id="solidbackground" href="#solidbackground" onclick="javascript:UI.freezebackground();" style="color:#fff;opacity:0.5">Background ON</a></p>
+<img async src="/colorwheel/block_sprite.png" style="width:0px;height:0px;display:none" /> <!-- cache it -->
+
+<script>
+
+UI.invertUI("black");
+var dochangebodybg = true;
+
+$(function() {
+
+	/* Show all button */
+	
+	$(document).on('click', '#show_all', function (e) {
+		search.lookupValue(true);
+	    e.preventDefault();
+	});
+
+
+	$('.demo2').colorpicker().on('changeColor', function(ev) {
+		search.lookupValue();
+
+		var rgb = colorConverter.hexToRgb(ev.color.toHex());
+		if ((rgb[0] * 0.3 + rgb[1] * .59 + rgb[2] * .11) <= 150) {
+			UI.invertUI("white");
+		} else {
+			UI.invertUI("black");
+		}
+		if (!UI.isBackgroundFrozen()) {
+			$("body").css("background-color", ev.color.toHex());
+		}
+	});
+});
+</script>
+</body>
+</html>
